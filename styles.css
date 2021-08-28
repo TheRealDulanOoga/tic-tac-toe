@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "made_soulmazeregular";
+  src: url("Font.otf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(23, 36, 31);
+  color: rgb(250, 255, 203);
+  font-family: "made_soulmazeregular", Impact;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  height: 12.5vh;
+  width: 100%;
+  background-color: #333;
+  box-shadow: 0 1vh 2vh 0.5vh rgba(0, 0, 0, 0.4);
+  padding: 2vh;
+}
+
+.topnav > * {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2.25vh;
+}
+
+.topnav > a {
+  height: 6vh;
+  width: 6vh;
+  margin-top: 1.25vh;
+  margin-right: 1.5vh;
+  padding: 1vh;
+  transition-duration: 0.4s;
+  border-radius: 0.75vh;
+  background-color: rgb(212, 224, 104);
+  box-shadow: 0 0.5vh 1vh 0.1vh rgba(0, 0, 0, 0.4);
+}
+
+.topnav > a:hover {
+  background-color: rgb(203, 255, 231);
+  color: rgb(212, 224, 104);
+  box-shadow: 0 0 1vh 0.2vh rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.topnav > a > img {
+  width: 4vh;
+}
+
+.topnav-centered {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vw;
+}
+
+.topnav-right {
+  margin-top: 2.5vh;
+  text-align: right;
+  float: right;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 22vh);
+  grid-template-rows: repeat(3, 22vh);
+  gap: 2vh;
+
+  background-color: rgb(212, 224, 104);
+  border-radius: 0.5vh;
+  padding: 2vh;
+  margin: 5vh;
+}
+
+.board > div {
+  text-align: center;
+  font-size: 15vh;
+
+  background-color: rgb(182, 196, 60);
+  border-radius: 0.5vh;
+  transition-duration: 0.3s;
+}
+
+.board > div:hover {
+  background-color: rgb(203, 255, 231);
+  color: rgb(212, 224, 104);
+  box-shadow: 0 0 1vh 0.2vh rgba(255, 255, 255, 0.4);
+  text-shadow: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 12.5vh;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
+  transition: background-color 1s, color 1s;
+}
+
+.game-over-text {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  margin-top: 3vh;
+  font-size: 25vh;
+}

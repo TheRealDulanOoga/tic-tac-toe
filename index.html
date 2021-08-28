@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="js/script.js" type="module"></script>
+    <link rel="icon" href="icons/Game.png" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <div class="topnav-centered">
+        <span>Tic-Tac-Toe</span>
+      </div>
+      <a id="disable-link" href="index.html"
+        ><img src="icons/Reload.png" alt="Reload"
+      /></a>
+      <div class="topnav-right">
+        <div>
+          <span>Turn - <span id="turn-display">X</span></span>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="board"></div>
+    </main>
+    <div id="game-over-nav" class="overlay">
+      <div class="game-over-text">Hello</div>
+    </div>
+  </body>
+</html>
