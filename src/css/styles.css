@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Soulmaze";
+  src: url("../Font.otf");
+}
+
+:root {
+  --text-color: rgb(250, 255, 203);
+  --light-color: rgb(212, 224, 104);
+  --dark-color: rgb(182, 196, 60);
+  --navbar-color: #333;
+  --background-color: rgb(23, 36, 31);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Soulmaze", Impact;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 0;
+  margin: 0;
+}
