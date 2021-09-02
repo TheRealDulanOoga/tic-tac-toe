@@ -129,7 +129,7 @@ function checkWin(tileInput) {
             gameEnd("TRBL", STATUS);
             break;
         default:
-            if (activeTilesCount >= 8) {
+            if (activeTilesCount >= 9) {
                 gameEnd("none", "draw!");
             };
             break;
